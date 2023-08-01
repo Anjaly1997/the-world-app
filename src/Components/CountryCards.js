@@ -6,9 +6,9 @@ import Typography from '@mui/material/Typography';
 
 export default function CountryCard(props) {
   return (
-    <Card sx={{ maxWidth: 400, width: 300}}>
+    <Card sx={{ maxWidth: 300, width:200}}>
       <CardMedia
-        sx={{ height: 200 }}
+        sx={{ height: 150 }}
         image={props.flagUrl}
         title="green iguana"
       />
@@ -17,10 +17,7 @@ export default function CountryCard(props) {
           {props.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {props.capital}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {props.population}
+          {props.capital} |  {props.population}
         </Typography>
       </CardContent>
     </Card>
